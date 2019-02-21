@@ -1,0 +1,18 @@
+package br.com.fiap.dao;
+
+import br.com.fiap.entity.Empresa;
+import br.com.fiap.exception.CommitException;
+
+public interface EmpresaDAO {
+	//poderia ser Empresa cadastrar
+	
+	void cadastrar (Empresa empresa);
+	
+	void atualizar (Empresa empresa);
+	
+	void deletar (int codigo);
+	
+	Empresa pesquisar (int codigo);
+	
+	void commit() throws CommitException;
+}
